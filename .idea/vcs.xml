@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/CsvToJson" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Simmon2.0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TesteCSVToJson" vcs="Git" />
+  </component>
+</project>

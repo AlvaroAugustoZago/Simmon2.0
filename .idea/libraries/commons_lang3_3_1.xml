@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="commons-lang3-3.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/commons-lang3-3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mysql-connector-java-8.0.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/opencsv-4.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/univocity-parsers-2.8.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
