@@ -20,8 +20,12 @@ public class Main {
         Conexao conexao = new Conexao();
         conec = conexao.abrirConexao();
 
-        File f = new File("arquivo");
+        File f = new File("arquivos");
         for (File file : f.listFiles()) {
+            if (file.isDirectory() || !file.getName().contains(".csv")){
+                continue;
+            }
+
             String comandoVerfica = "select table_name from information_schema.tables where table_name = '" + file.getName().replace(".csv", "") + "'";
             List<String> allLines = Files.readAllLines(Paths.get(file.getAbsolutePath()));
             if (allLines.get(0).contains(",")) {
@@ -40,7 +44,7 @@ public class Main {
             }
 
             System.out.println("Importando: " + file.getName());
-            readDataFromCustomSeperator(file);
+//            readDataFromCustomSeperator(file);
         }
     }
 
