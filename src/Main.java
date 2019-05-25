@@ -9,12 +9,14 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.sql.*;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
 
     private static Connection conec = null;
     private static char separator = ';';
+    private static Integer totalImport = 3000;
 
     public static void main(String[] args) throws SQLException, IOException {
         Conexao conexao = new Conexao();
@@ -22,7 +24,7 @@ public class Main {
 
         File f = new File("arquivos");
         for (File file : f.listFiles()) {
-            if (file.isDirectory() || !file.getName().contains(".csv")){
+            if (file.isDirectory() || !file.getName().contains(".csv")) {
                 continue;
             }
 
@@ -44,7 +46,7 @@ public class Main {
             }
 
             System.out.println("Importando: " + file.getName());
-//            readDataFromCustomSeperator(file);
+            readDataFromCustomSeperator(file);
         }
     }
 
@@ -82,22 +84,61 @@ public class Main {
             PreparedStatement p = conec.prepareStatement(createTable);
             p.execute();
 
-            for (int i = 1; i < allData.size(); i++) {
-                String insert = "insert into " + file.getName().replace(".csv", "") + " ";
-                insert += "values (";
-                for (int j = 0; j < allData.get(i).length; j++) {
-                    if (j != 0) {
-                        insert += ",";
-                    }
-                    insert += "'" + allData.get(i)[j] + "'";
-                }
-                insert += ")";
-                System.out.println(insert);
-                conec.prepareStatement(insert).execute();
-                System.out.println("inserindo");
+            int totalCont = Math.round(allData.size() / totalImport);
+            boolean insereUm = false;
+
+            int contMaximo = totalImport;
+            if (totalCont <= 0) {
+                insereUm = true;
+                contMaximo = allData.get(0).length;
             }
 
-            System.out.println("Apos");
+            int cont = 0;
+            int contMin = 0;
+            while ((cont <= totalCont) || insereUm) {
+                long tempoInicio = System.currentTimeMillis();
+                List<String[]> sublista = null;
+                if (!insereUm) {
+                    if (cont == totalCont) {
+                        sublista = allData.subList(contMin, allData.size());
+                    } else {
+                        sublista = allData.subList(contMin, contMaximo);
+                    }
+                } else {
+                    sublista = allData;
+                    insereUm = false;
+                    cont = totalCont;
+                }
+
+                String insert = "insert into " + file.getName().replace(".csv", "") + " ";
+                insert += "values";
+
+                for (String[] colunas : sublista) {
+                    if (sublista.indexOf(colunas) == 0){
+                        continue;
+                    }
+                    insert += " (";
+                    for (String campo : colunas) {
+                        if (Arrays.asList(colunas).indexOf(campo) != 0) {
+                            insert += ",";
+                        }
+                        insert += "'" + campo + "'";
+                    }
+                    insert += ")";
+                    if (sublista.indexOf(colunas) != (sublista.size() - 1)) {
+                        insert += ",";
+                    }
+                }
+
+                conec.prepareStatement(insert).execute();
+                System.out.println("insert:" + insert);
+                System.out.println("Tempo Total: " + (System.currentTimeMillis() - tempoInicio) / 1000);
+
+                cont++;
+                contMin += totalImport;
+                contMaximo += totalImport;
+            }
+
 
         } catch (Exception e) {
             e.printStackTrace();
