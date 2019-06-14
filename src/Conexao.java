@@ -5,7 +5,9 @@ import java.sql.DriverManager;
 public class Conexao {
     private Connection conexao;
     private String USER = "datasaude";
+//    private String USER = "root";
     private String SENHA = "sau09*123data";
+//    private String SENHA = "password";
     private String SERVER = "localhost";
     private String DATABASE_NAME = "datasaude";
     private String PORTA = "3306";

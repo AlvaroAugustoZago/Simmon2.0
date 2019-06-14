@@ -7,13 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfff2163-ae10-445b-bf22-b6fdb00e1912" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arquivo/_DataSus_Asma_Dez2016_10a14Anos_Masc.csv_convertido.csv" beforeDir="false" afterPath="$PROJECT_DIR$/arquivos/_DataSus_Asma_Dez2016_10a14Anos_Masc.csv_convertido.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arquivo/tb_br_0003.csv" beforeDir="false" afterPath="$PROJECT_DIR$/arquivos/tb_br_0003.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arquivo/teste.jar" beforeDir="false" afterPath="$PROJECT_DIR$/arquivos/teste.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arquivos/_DataSus_Asma_Dez2016_10a14Anos_Masc.csv_convertido.csv" beforeDir="false" afterPath="$PROJECT_DIR$/arquivos/DataSus_Asma_Dez2016_10a14Anos_Masc.csv_convertido.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arquivos/tb_br_0003.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/arquivos/teste.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/TesteCSVTOJSON_jar/TesteCSVTOJSON.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TesteCSVTOJSON/Conexao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TesteCSVTOJSON/Conexao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TesteCSVTOJSON/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TesteCSVTOJSON/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Conexao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Conexao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -31,8 +33,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+            <state relative-caret-position="-377">
+              <caret line="26" column="32" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Conexao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            <state relative-caret-position="105">
+              <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,17 +96,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Simmon2.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="Simmon2.0" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Simmon2.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Simmon2.0" type="462c0819:PsiDirectoryNode" />
-              <item name="arquivos" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Simmon2.0" type="b2602c69:ProjectViewProjectNode" />
@@ -116,7 +114,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -125,7 +122,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/univocity-parsers-2.8.2.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -181,10 +178,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
+    <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27265862" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27727273" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -193,7 +190,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32903227" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3289256" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -217,15 +214,9 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>112</line>
+          <line>134</line>
           <properties />
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/Conexao.java</url>
-          <line>10</line>
-          <properties field="PORTA" class="Conexao" />
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -285,28 +276,13 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/arquivos/_DataSus_Asma_Dez2016_10a14Anos_Masc.csv_convertido.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/java/io/FileReader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.base/java/io/FileReader.class" />
     <entry file="jar://$USER_HOME$/Downloads/opencsv-4.6.jar!/com/opencsv/CSVParserBuilder.class" />
     <entry file="file://$PROJECT_DIR$/src/configuracao/configuracaoDAOInterface/ConfiguracaoDAOInterface.java" />
     <entry file="file://$PROJECT_DIR$/src/configuracao/configuracaoDAO/ConfiguracaoDAO.java" />
     <entry file="file://$PROJECT_DIR$/src/conexao/BancoCore.java" />
     <entry file="file://$PROJECT_DIR$/src/configuracao/Configuracao.java" />
-    <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.sql/java/sql/PreparedStatement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="55" column="12" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jrt:///usr/lib/jvm/java-1.11.0-openjdk-amd64!/java.sql/java/sql/PreparedStatement.class" />
     <entry file="file://$PROJECT_DIR$/arquivos/tb_br_0003.csv">
       <provider selected="true" editor-type-id="LargeFileEditor">
         <state relative-caret-position="103">
@@ -314,10 +290,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/arquivos/DataSus_Asma_Dez2016_10a14Anos_Masc.csv_convertido.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+        <state relative-caret-position="-377">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -326,8 +305,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Conexao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        <state relative-caret-position="105">
+          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
